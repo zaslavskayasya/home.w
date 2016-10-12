@@ -6,8 +6,9 @@ body {
 /* http://dimox.name/press_footer_bottom_with_css/  - 5-й способ, прижать футер книзу */
 html,
 body {
-    height: 100%;
+  
     position: relative;
+
 }
 /*.wrapper {
     display: flex;
@@ -26,9 +27,20 @@ body {
     min-width: 900px;
     margin: 0 auto;
 }
-header{
+.header{
+    display: block;
     padding: 25px 10px;
     height: 200px;
+    position: fixed;
+    top: 0;
+    left: 26%;
+    background-color: #ccc;
+    width: 100%;
+
+}
+.section {
+    display: block;
+    margin-top: 250px;
 }
 .avatar {
     width: 200px;
@@ -77,6 +89,9 @@ ul p {
 footer {
     text-align: center;
     background-color: #fe7761;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 table {
     width: 400px;
